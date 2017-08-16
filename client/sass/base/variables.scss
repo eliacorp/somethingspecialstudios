@@ -1,0 +1,83 @@
+/*....................................SCSS VARIABLES..................................*/
+
+
+// ........................................................FONT WEIGHTS
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 900;
+
+
+// ........................................................FONT SIZES
+$font-size-h1:70px;
+$font-size-h2:35px;
+$font-size-h3:24px;
+$font-size-p: 12px;
+
+$font-size-h1-mobile: 35px;
+$font-size-h2-mobile: 18px;
+$font-size-p-mobile: 10px;
+
+// ........................................................FONT FAMILIES
+$font-family-h1: tiempos;
+$font-family-h2: tiempos;
+$font-family-h3: metric-regular;
+$font-family-p: founders;
+
+
+
+// ........................................................FONT LINEHEIGHTS
+$line-height-h1: 200px;
+$line-height-h2: 60px;
+$line-height-h3: 30px;
+$line-height-p: 22px;
+
+$line-height-h1-mobile: 100px;
+$line-height-h2-mobile: 40px;
+$line-height-h3-mobile: 25px;
+$line-height-p-mobile: 17px;
+
+
+$letter-spacing: 1px;
+$letter-spacing-h1: 2px;
+$letter-spacing-h2: 3px;
+$letter-spacing-h3: 1px;
+$letter-spacing-paragraph:1px;
+
+
+// ........................................................COLORS
+$black: #000000;
+$white: #FFFFFF;
+$yellow: #ede611;
+$green: #00FF00;
+
+
+// ........................................................MARGINS
+$margin-sides: 25px;
+$margin-bottom: 35px;
+$margin-top: 100px;
+$margin-sides-mobile:10px;
+$margin-left-paragraph:5px;
+
+// ........................................................TRANSITION TIMINGS
+$transition-extreme-slow: 1.4s;
+$transition-slow: .6s;
+$transition-medium: .4s;
+$transition-fast: .2s;
+
+
+
+// ........................................................Z-INDEXES
+$z-loader:15;
+$z-logo:11;
+$z-cart: 13;
+$z-clickOut: 12;
+$z-star:10;
+
+$z-weare-text:7;
+$z-weare-slider:6;
+
+$z-detail:6;
+$z-nav:5;
+
+
+/*....................................................................................*/

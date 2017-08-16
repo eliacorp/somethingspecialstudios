@@ -1,0 +1,16 @@
+
+
+// IMPORT PARTIALS
+@import "base/reset";
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
+@import "base/keyframes";
+@import "base/general";
+
+
+
+@import "partial/home";
+@import "partial/case";
+@import "partial/work";
+@import "partial/work-detail";

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="appCtrl">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="a Marketing Agency">
+    <meta name="keywords" content="somethingspecial, agency, Michael Goldberg, new york, special, something special studios, something special, studio">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name=“author” title=“Elia Fornari | Qual Agency”>
+    <link rel="alternate" hreflang="en" href="http://somethingspecialstudios.com/" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>SOMETHING SPECIAL STUDIOS</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <!--
+    =======================================================================
+
+      Chapter | 2016
+
+      developed by Elia Fornari, designed by Marc Kalman | Qual Agency
+
+    =======================================================================
+    -->  <link rel="stylesheet" type="text/css" href="dist/style.min.css">
+
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68513539-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <base href="/">
+  </head>
+
+
+
+  <body>
+ <!-- style="background-color: {{backgroundColor}}" -->
+
+     <nav-directive ng-hide="isDevice"></nav-directive>
+
+    <div class="star" style="color: {{page.textColor}}" ng-click="showNav()" ng-class="{'flipped':isNav}" ng-hide="isDevice">
+
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      	 width="2254px" height="933.333px" viewBox="0 0 2254 933.333" enable-background="new 0 0 2254 933.333" xml:space="preserve">
+      <rect y="0.167" width="2254" height="59" style="fill: {{page.textColor}};"/>
+      <rect y="437.167" width="2254" height="59" style="fill: {{page.textColor}};"/>
+      <rect y="874.167" width="2254" height="59" style="fill: {{page.textColor}};"/>
+      </svg>
+
+    </div>
+
+    <div class="state" style="color: {{page.textColor}};" ng-hide="page.name=='intro'">
+      Something Special Studios  <span>{{currentLocation}}</span>
+    </div>
+    <div class="state-dottedline" ng-hide="page.name=='intro' || isDevice">
+      <div class="state-dottedline-percent" style="border-bottom: 1px dotted {{page.textColor}}; width: {{scrollModule}}%">
+
+
+      </div>
+
+    </div>
+
+
+
+    <main ng-view class='main' autoscroll="true" ng-hide="pageLoading">
+    </main>
+
+
+
+  </body>
+
+  <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+
+  <script src="dist/bundle.min.js"></script>
+</html>

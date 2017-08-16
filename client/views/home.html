@@ -1,0 +1,118 @@
+<div class="home" summary="home page" id="home"   ng-controller="appCtrl" touch-directive>
+<!-- ng-mousedown="mouseDown($event)" ng-mouseup="mouseUp($event)" -->
+
+  <div class="home-section">
+
+    <div class="home-section-single" id="intro" ng-show="page.name=='intro' || isDevice">
+      <table><tr><td>
+        <div class="home-section-single-logotype" style="width: {{opacity1}}vw"><logotype-directive ></logotype-directive></div>
+      </td></tr></table>
+
+      <div class="home-section-hint" ng-show="hint.show && !isDevice" >
+        {{hint.text}}
+      </div>
+    </div>
+
+    <div class="home-section-single" id="special" ng-show="page.name=='special' || isDevice">
+      <table><tr><td>
+        <div class="home-section-single-special">
+          <h1>Spe·cial</h1>
+          <p>
+            /' speCHƏl/ adjective
+          </p>
+          <p>
+            better, greater, or otherwise
+            different from what is usual
+          </p>
+        </div>
+      </td></tr></table>
+    </div>
+
+    <div class="home-section-single" id="vision" ng-show="page.name=='vision' || isDevice">
+      <table><tr><td>
+        <div class="home-section-single-vision">
+          <h2 ng-if="!isMobile">
+            Something Special Studios is a</br>
+            full-service marketing agency</br>
+            aligning brands with contemporary</br>
+            culture to create purposeful content</br>
+            and meaningful experiences.
+
+          </h2>
+          <h2 ng-if="isMobile">
+            Something Special Studios</br>
+            is a full-service</br>
+            marketing agency</br>
+            aligning brands with</br>
+            contemporary culture</br>
+            to create purposeful</br>
+            content and</br>
+            meaningful experiences.
+          </h2>
+        </div>
+      </td></tr></table>
+    </div>
+
+
+    <div class="home-section-single" id="whatwedo" ng-show="page.name=='whatwedo' || isDevice">
+      <whatwedo-directive></whatwedo-directive>
+    </div>
+
+    <div class="home-section-single" id="clients" ng-show="page.name=='clients' || isDevice">
+      <table><tr><td>
+        <div class="home-section-single-clients">
+
+
+          <table class="section-table"><tr><td>
+            <h1 class="section-h1 section-h1-clients">Clients:</h1>
+
+            <clienticons-directive></clienticons-directive>
+          </td></tr></table>
+
+        </div>
+      </td></tr></table>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="footer" id="contact" ng-show="page.name =='contact' || isDevice">
+    <table>
+      <tr>
+        <td>
+          <div class="footer-contact">
+            <table class="footer-contact-table">
+              <tr>
+                <td style="width:25%"><a href="mailto:thankyou@somethingspecialstudios.com?subject=generalinquiry">general inquiry</a></td>
+                <td style="width:25%"><a href="mailto:thankyou@somethingspecialstudios.com?subject=careers">careers</a></td>
+                <td style="width:25%"><a href="https://www.instagram.com/somethingspecialstudios" target="_blank">IG</a></td>
+                <td style="width:25%"><a href="https://vimeo.com/somethingspecialstudios" target="_blank">VIMEO</a></td>
+              </tr>
+              <tr>
+                <td colspan="2"><a href="mailto:mg@somethingspecialstudios.com">Michael Goldberg</br>(Managing Partner)</a></td>
+                <td colspan="2"><a href="mailto:jillian@somethingspecialstudios.com">Jillian Hoey</br>(Strategist)</a></td>
+              </tr>
+            </table>
+
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <div class="footer-logo" style="left:{{scrollModuleOpposite}}vw">
+      <logo-directive></logo-directive>
+    </div>
+
+
+    <!-- <a class="footer-case" href="/case">case studies</a> -->
+  </div>
+
+<!--
+
+//mobile
+-->
+
+</div>

@@ -1,0 +1,12 @@
+<nav class="nav" ng-show="isNav">
+  <div class="nav-list">
+      <a class="nav-a" ng-click="noRefresh('intro' ,false); showNav();" style="color: {{page.textColor}}" ng-class="{'active': isActive('intro')}">home</a>
+
+      <a class="nav-a" ng-click="noRefresh('special' ,false); showNav();" style="color: {{page.textColor}}" ng-class="{'active': isActive('special')}">special</a>
+      <a class="nav-a" ng-click="noRefresh('vision' ,false); showNav();" style="color: {{page.textColor}}" ng-class="{'active': isActive('vision')}">about</a>
+      <!-- <a class="nav-a" ng-click="noRefresh('weare' ,false); showNav();" style="color: {{page.textColor}}" ng-class="{'active': isActive('weare')}">weare</a> -->
+      <a class="nav-a" ng-click="noRefresh('whatwedo' ,false); showNav();" style="color: {{page.textColor}}" ng-class="{'active': isActive('whatwedo')}">whatwedo</a>
+      <a class="nav-a" ng-click="noRefresh('clients' ,false); showNav();" style="color: {{page.textColor}}" ng-class="{'active': isActive('clients')}">clients</a>
+      <a class="nav-a" ng-click="noRefresh('contact' ,false); showNav();" style="color: {{page.textColor}}" ng-class="{'active': isActive('contact')}">contact</a>
+  </div>
+</nav>
