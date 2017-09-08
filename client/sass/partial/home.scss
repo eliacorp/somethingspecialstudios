@@ -281,30 +281,7 @@
   }
 }
 
-.table-li.client-icon{
-  &:last-child{
-    float: left;
-    left: 50%;
-    position: relative;
-    margin-left: -14.5vw;
-  }
-  @include respond-to(phone){
-    width:50%;
-    height:25vh;
-    min-height: 10vh;
-    max-height: 20vh;
-    &:last-child{
-      margin-left: -25%;
-    }
-    svg{
-      width:80%;
-      height:80%;
-      padding: 10% 10%;
-    }
 
-
-  }
-}
 
 
 .section-table{
@@ -388,5 +365,42 @@
         width:40vw;
       }
     }
+  }
+}
+
+
+
+
+
+.table-li.client-icon{
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  float: left;
+  // &:last-child{
+  //   float: left;
+  //   left: 50%;
+  //   position: relative;
+  //   margin-left: -14.5vw;
+  // }
+
+  @include respond-to(phone){
+    width:50%;
+    height:25vh;
+    min-height: 10vh;
+    max-height: 18vh;
+    &:last-child{
+      position: relative;
+      left: 50%;
+      margin-left: -25%;
+    }
+    svg{
+      width:80%;
+      height:80%;
+      padding: 10% 10%;
+      margin: auto;
+      display: block;
+    }
+
+
   }
 }
