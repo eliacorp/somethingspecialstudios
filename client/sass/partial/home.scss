@@ -268,7 +268,7 @@
   display: block;
   @include h1();
   height:30vh;
-  width: 88vw;
+  width: 80vw;
   margin: auto;
   color:#FFFFFF;
   @include respond-to(phone){
@@ -295,6 +295,7 @@
   // position: absolute;
   left:0;
   top:30vh;
+
   @include respond-to(phone){
     width: 80vw;
     height:100%;
@@ -330,18 +331,7 @@
       width:100%;
       height:100%;
     }
-    .client-icon-image{
-      width:100%;
-      height:100%;
-      display: block;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 70%;
-      @include respond-to(phone){
-        height:25vh;
-        display: black;
-      }
-    }
+
 
     h2{
       @include h2();
@@ -374,37 +364,50 @@
 
 
 
-
-
-.table-li.client-icon{
+.client-ul{
+  width:auto;
+  margin: auto;
   white-space: nowrap;
-  overflow-wrap: break-word;
-  float: left;
-  // &:last-child{
-  //   float: left;
-  //   left: 50%;
-  //   position: relative;
-  //   margin-left: -14.5vw;
-  // }
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // grid-gap: 10px;
+  @include respond-to(laptop-large){
+    width: 85vw;
+    grid-column-gap: 2vw;
+    grid-row-gap: 0vw;
+  }
+  @include respond-to(desktop){
+    width: 90vw;
+    grid-column-gap: 2vw;
+    grid-row-gap: 0vw;
+  }
   @include respond-to(phone){
-    width:50%;
-    height:25vh;
-    min-height: 10vh;
-    max-height: 18vh;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.client-icon{
+  padding: 10px;
+  @include respond-to(phone){
+  //   width:50%;
+  //   height:25vh;
+  //   min-height: 10vh;
+  //   max-height: 18vh;
+  padding: 16px 0;
     &:last-child{
       position: relative;
-      left: 50%;
-      margin-left: -25%;
+      transform: translateX(50%);
+      -webkit-transform: translateX(50%);
+      -moz-transform: translateX(50%);
+      -o-transform: translateX(50%);
+      -ms-transform: translateX(50%);
     }
-    svg{
-      width:80%;
-      height:80%;
-      padding: 10% 10%;
-      margin: auto;
-      display: block;
-    }
-
-
+  //   svg{
+  //     width:80%;
+  //     height:80%;
+  //     padding: 10% 10%;
+  //     margin: auto;
+  //     display: block;
+  //   }
   }
 }
